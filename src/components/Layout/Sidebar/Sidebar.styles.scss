@@ -1,0 +1,34 @@
+.SidebarWrapper{
+   width: 200px;
+   height: 100%;
+   position: fixed;
+   // display: flex;
+   // flex-direction: column;
+   // align-items: left;
+   // justify-content: flex-start;
+   padding: 0 25px;
+   border-right: #c6d2d9 1px solid;
+   &__label{
+      color: #a3a3a3;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+   }
+   &__list{
+     list-style-type: none;
+     padding:0;
+     margin: 0;
+     &-item{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      &-link{
+        text-decoration: none;
+        margin-left: 30px;
+        color: #000;
+     }}
+   }
+}
+
