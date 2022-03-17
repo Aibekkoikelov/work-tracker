@@ -37,7 +37,7 @@ const Sidebar = (props) => {
           </a>
         </li>
         <li className="SidebarWrapper__list-item">
-          <SettingsIcon />
+          <ArticleIcon />
           <a href="#" className="SidebarWrapper__list-item-link">
             <span>SETTINGS</span>
           </a>

@@ -1,16 +1,22 @@
 .SidebarWrapper{
-   width: 200px;
+   position: fixed; 
+   top: 49px;
+   left: 0;
+   width: 74px;
    height: 100%;
-   position: fixed;
-   padding-left: 25px;
-   box-sizing: border-box;   
+   background-color: #fff;
    border-right: #c6d2d9 1px solid;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
    &__label{
       color: #a3a3a3;
       width: 100%;
       height: 50px;
       display: flex;
       align-items: center;
+      padding-left: 25px;
+      display:none;
+      transition: all 0.3s ease-in-out;
    }
    &__list{
      list-style-type: none;
@@ -20,6 +26,8 @@
         height: 50px;
         display: flex;
         align-items: center;
+        padding-left: 25px;
+        cursor: pointer;
         &:hover{
            background-color: #e4eaee;
         }

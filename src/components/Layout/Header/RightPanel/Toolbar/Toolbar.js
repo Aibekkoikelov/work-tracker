@@ -37,13 +37,16 @@ const Toolbar = () => {
         }}
       >
         <Button variant="outlined">Upgrade</Button>
-        <HelpOutlineIcon />
-        <NotificationsOutlinedIcon />
+        <div className="toolbar__icon">
+          <HelpOutlineIcon />
+        </div>
+        <div className="toolbar__icon">
+          <NotificationsOutlinedIcon />
+        </div>
         <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
             size="small"
-            // sx={{ ml: 2 }}
             aria-controls={open ? "account-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}

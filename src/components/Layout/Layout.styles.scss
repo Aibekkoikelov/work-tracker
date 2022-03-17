@@ -1,1 +1,15 @@
-/* your css code */
+.LayoutWrapper{
+   background-color: #f2f6f8;
+}
+.fullSideBar{
+   .SidebarWrapper{
+      width: 200px;
+      &__label{
+         display: flex;
+      }
+   }
+   .RouterWrapper{
+      padding: 40px 10px 40px 210px;
+   }
+
+}
