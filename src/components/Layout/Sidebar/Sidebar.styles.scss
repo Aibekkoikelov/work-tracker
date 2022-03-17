@@ -2,11 +2,8 @@
    width: 200px;
    height: 100%;
    position: fixed;
-   // display: flex;
-   // flex-direction: column;
-   // align-items: left;
-   // justify-content: flex-start;
-   padding: 0 25px;
+   padding-left: 25px;
+   box-sizing: border-box;   
    border-right: #c6d2d9 1px solid;
    &__label{
       color: #a3a3a3;
@@ -20,10 +17,15 @@
      padding:0;
      margin: 0;
      &-item{
-        width: 100%;
         height: 50px;
         display: flex;
         align-items: center;
+        &:hover{
+           background-color: #e4eaee;
+        }
+        &-active{
+           background-color: #e4eaee;
+        }
       &-link{
         text-decoration: none;
         margin-left: 30px;
