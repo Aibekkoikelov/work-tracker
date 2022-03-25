@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
@@ -12,7 +12,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import PersonAdd from "@mui/icons-material/PersonAdd";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import PropTypes from "prop-types";
-import './Toolbar.styles.scss';
+import "./Toolbar.styles.scss";
 import { Button } from "@mui/material";
 
 const Toolbar = () => {
@@ -24,7 +24,7 @@ const Toolbar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  
+
   return (
     <div className="toolbar">
       <Box
@@ -36,7 +36,18 @@ const Toolbar = () => {
           justifyContent: "space-between",
         }}
       >
-        <Button variant="outlined">Upgrade</Button>
+        <Button
+          sx={{
+            width: "69px",
+            height: "25px",
+            fontSize: "12px",
+            borderRadius: "2px",
+          }}
+          variant="outlined"
+          className="toolbar__btn"
+        >
+          Upgrade
+        </Button>
         <div className="toolbar__icon">
           <HelpOutlineIcon />
         </div>

@@ -13,4 +13,11 @@
          border-right: 1px dotted #c6d2d9;
       }
    }
+   &__btn{
+      // background-color: #fff;
+      &:hover{
+         background-color: #03a9f4 !important;
+         color: #fff;
+      }
+   }
 }

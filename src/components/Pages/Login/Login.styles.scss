@@ -1,0 +1,31 @@
+.loginContainer{
+   display: flex;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   
+   &__LeftSide{
+      width: 70%;
+      height: 100vh;
+      padding-top: 150px;
+      background: url(../../../resourse/img/loginbg.png)center no-repeat ;
+      background-position: 120% 50%;
+      background-color: #f2f6f8;
+   }
+   &__box{
+      position: relative;
+      width: 300px !important;
+      background-color: #fff;
+      border-radius: 2px;
+      box-shadow: 0 0 20px #0000001a;
+   }
+   &__SignUp{
+      position: absolute;
+      top: 20px;
+      left: 70%;
+      transform: translateX(-110%);
+      color: #999;
+      font-size: 14px;
+
+   }
+}

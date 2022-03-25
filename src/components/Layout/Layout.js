@@ -8,11 +8,12 @@ import  './Layout.styles.scss';
 import { useSelector } from "react-redux";
 const Layout = (props) => {
   const toggle = useSelector(state => state.settings.activeSideBar);
+
   return (
-    <div className={`LayoutWrapper ${toggle?"fullSideBar":null}`}>
-      <Header />
-      <Sidebar />
-      <Router />
+    <div className={`LayoutWrapper ${toggle ? "fullSideBar" : null}`}>
+        <Header />
+        <Sidebar />
+        <Router />
     </div>
   );
 } 

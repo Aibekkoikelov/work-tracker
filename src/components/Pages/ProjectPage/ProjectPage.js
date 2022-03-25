@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ProjectPage.styles.scss';
+const user = require('../../../service/userService');
 
 const ProjectPage = (props) => {
 
@@ -11,7 +12,7 @@ const ProjectPage = (props) => {
     <div className="project">
       <div className="project__header">
         <h1 className="project__header-title">Project</h1>
-        <div onClick={showModal} className="project__header-btn">CREATE NEW PROJECT</div>
+        <div onClick={user} className="project__header-btn">CREATE NEW PROJECT</div>
       </div>
       
     </div>
